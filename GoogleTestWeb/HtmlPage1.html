@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+
+    $(function () {
+        $('button:eq(0)').on("click", BtnClick);
+    })
+    function BtnClick() {
+        //if (typeof jsMsg == "undefined") {
+        //    alert("jsMsg参数未初始化")
+        //    //return;
+        //}
+        jsMsg.OpenWindows("http://localhost:50712/HtmlPage2.html");
+    }
+    </script>
+
+    <button style="margin-top:100px">打开窗体页面</button>
+
+</body>
+</html>

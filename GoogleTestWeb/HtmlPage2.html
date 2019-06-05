@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+    var test_val;
+    function test() {
+        alert("收到Net程序事件 " + test_val);
+    }
+    function testArg(d1,d2) {
+        alert("收到Net程序事件1 " + d1);
+        alert("收到Net程序事件2 " + d2);
+    }
+
+    $(function () {
+        $('button:eq(0)').on("click", BtnClick);
+        $('button:eq(1)').on("click", BtnClickArgs);
+    })
+    function BtnClick() {
+        jsMsg.MessageText = "我是js";
+        jsMsg.ShowTest();
+    }
+    </script>
+
+    <button style="margin-top:100px">弹出页面</button>
+
+</body>
+</html>
